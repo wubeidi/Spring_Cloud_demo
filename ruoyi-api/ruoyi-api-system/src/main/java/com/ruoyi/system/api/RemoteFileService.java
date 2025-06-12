@@ -37,4 +37,7 @@ public interface RemoteFileService
      */
     @DeleteMapping(value = "/delete", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public R<Boolean> delete(@RequestParam("fileUrl") String fileUrl);
+
+
+    //下载文件
 }
